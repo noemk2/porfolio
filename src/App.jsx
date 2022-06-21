@@ -11,7 +11,7 @@ function App() {
     font-thin pt-20 pb-6
     text-center
   ">
-        <img className="mx-auto w-24 rounded-full bg-no-repeat bg-cover" src="https://avatars.githubusercontent.com/u/37389982?v=4" alt="" />
+        <img className="mx-auto w-24 rounded-full bg-no-repeat bg-cover" src="https://user-images.githubusercontent.com/37389982/174700895-62448072-7301-49dd-8ba8-35201e78f44f.jpg" alt="" />
 
         <div className="p-3">
 
