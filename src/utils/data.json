@@ -1,0 +1,80 @@
+{
+    "company": [
+        {
+            "name": "company1",
+            "text": "lorem ipsum dolor sit amet",
+            "date": "12 May, 2018",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        },
+        {
+            "name": "company2",
+            "text": "lorem ipsum dolor sit amet",
+            "date": "12 May, 2018",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        }
+    ],
+    "project": [
+        {
+            "title": "project1",
+            "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
+            "link": "https://www.youtube.com/"
+        },
+        {
+            "title": "project2",
+            "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
+            "link": "https://github.com/noemk2/"
+        },
+        {
+            "title": "project",
+            "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
+            "link": "https://github.com/noemk2/"
+        }
+    ],
+    "education": [
+        {
+            "title": "Universidad",
+            "date": "12 May, 2018",
+            "text": "lorem ipsum dolor sit amet",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        },
+        {
+            "title": "Universidad",
+            "date": "12 May, 2018",
+            "text": "lorem ipsum dolor sit amet",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        }
+    ],
+    "contact": [
+        {
+            "link": "https://github.com/noemk2/rust_mandelbrot"
+        },
+        {
+
+            "link": "https://github.com/noemk2/rust_mandelbrot"
+        },
+        {
+
+            "link": "https://github.com/noemk2/rust_mandelbrot"
+        },
+        {
+
+            "link": "https://github.com/noemk2/rust_mandelbrot"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-function CardCompany() {
+function CardCompany({ name, text, date, labors }) {
     return (
         <>
             <div className="shadow-xl p-5">
@@ -7,18 +7,22 @@ function CardCompany() {
 
                     <img className=" w-14 bg-no-repeat bg-cover " src="https://avatars.githubusercontent.com/u/37389982?v=4" alt="" />
                     <div className="ml-3 p-0.5">
-                        <p className="text-2xl">Company Name</p>
-                        <p className="text-sm">Subti January 2012 Septiembre 2012</p>
+                        <p className="text-2xl">{name}</p>
+                        <p className="text-sm">{date}</p>
                     </div>
 
                 </div>
 
                 <div>
-                    <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos ea sequi. Culpa et illum sint accusamus voluptatem soluta vero in ex, aperiam mollitia velit voluptatibus nemo laboriosam quia magnam.</p>
+                    <p className="mb-4">{text}</p>
                     <ul>
-                        <li>Nota 1</li>
-                        <li>Nota 1</li>
-                        <li>Nota 1</li>
+                        {
+                            labors.map((item, index) => {
+                                return <li key={index}>{item}</li>
+                            })
+
+                        }
+
                     </ul>
                 </div>
             </div>

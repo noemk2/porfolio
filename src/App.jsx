@@ -24,7 +24,15 @@ function App() {
 
       </div>
 
-      <Container title={variable[0]} />
+      {
+        variable.map((item, index) => {
+          return <Container title={item} key={index} />
+        })
+
+      }
+
+
+      {/* <Container title={variable[0]} />
 
       <Container title={variable[1]} />
 
@@ -32,7 +40,7 @@ function App() {
 
       <Container title={variable[3]} />
 
-      <Container title={variable[4]} />
+      <Container title={variable[4]} /> */}
 
       <div className="  bg-gray-200 text-white font-lato 
     font-thin pt-20 pb-6

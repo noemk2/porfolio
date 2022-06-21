@@ -1,4 +1,4 @@
-function CardEducation() {
+function CardEducation({ title, text, date, labors }) {
     return (
         <>
             <div className="shadow-xl p-5">
@@ -6,18 +6,22 @@ function CardEducation() {
                 <div className="flex items-center pl-0 mb-6">
 
                     <div className="p-0.5">
-                        <p className="text-2xl">School Name</p>
-                        <p className="text-sm">Subti January 2012 Septiembre 2012</p>
+                        <p className="text-2xl">{title}</p>
+                        <p className="text-sm">{date}</p>
                     </div>
 
                 </div>
 
                 <div>
-                    <p className="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dignissimos ea sequi. Culpa et illum sint accusamus voluptatem soluta vero in ex, aperiam mollitia velit voluptatibus nemo laboriosam quia magnam.</p>
+                    <p className="mb-4">{text}</p>
                     <ul>
-                        <li>Nota 1</li>
-                        <li>Nota 1</li>
-                        <li>Nota 1</li>
+                        {
+                            labors.map((item, index) => {
+                                return <li key={index}>{item}</li>
+
+                            })
+                        }
+
                     </ul>
                 </div>
             </div>
