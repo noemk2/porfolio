@@ -1,35 +1,56 @@
-import CardCompany from "./card-company"
-import CardProjects from "./card-projects";
-import CardEducation from "./card-education";
-import CardContac from "./card-contact";
+// import Company from "./sub-component/company";
+// import Project from "./sub-component/project";
+// import Education from "./sub-component/education";
+// import Contact from "./sub-component/contact";
 
-export default function Container({ title}) {
-    const text_p = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus illo, provident, dignissimos sint mollitia rem perferendis porro, et possimus ea quo expedita voluptates. Nesciunt qui unde similique ducimus consequatur ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad labore magni, voluptatibus deserunt doloribus doloremque ipsa maxime, assumenda ullam omnis sit nobis officia suscipit veniam pariatur laboriosam totam ea.'
+import CardCompany from "./cards/card-company";
+import utils from "../utils/utils.json";
 
 
-    let exp = <div className="grid columns-1 gap-10">
-        <CardCompany />
-        <CardCompany />
+import CardProjects from "./cards/card-projects";
+import CardEducation from "./cards/card-education";
+import CardContact from "./cards/card-contact";
+
+
+export default function Container({ title }) {
+
+    let company = utils.company;
+    let project = utils.project;
+    let education = utils.education;
+    let concat= utils.contact;
+
+    let comp = <div className="grid columns-1 gap-10">
+        {
+            company.map((item) => {
+                <CardCompany name={item.name} text={item.text} date={item.date} labors={item.labors} />
+            })
+        }
     </div>
 
     let pro = <div className="md:grid md:grid-cols-1 lg:grid-cols-3 gap-3 ">
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
+        {
+            project.map((item, index) => {
+                <CardProjects key={index} title={item.title} img={item.img} link={item.link} />
+            })
+        }
     </div>
 
     let edu = <div className="grid columns-1 gap-10">
-        <CardEducation />
-        <CardEducation />
+        {
+            education.map((item, index) => {
+                <CardEducation key={index} title={item.title} date={item.date} text={item.text} list={item.list} />
+            })
+        }
     </div>
 
-
-    let cont = <div className="md:grid md:grid-cols-4 _lg:grid-cols-4 gap-1 ">
-        <CardContac />
-        <CardContac />
-        <CardContac />
-        <CardContac />
+    let con = <div className="md:grid md:grid-cols-4 _lg:grid-cols-4 gap-1 ">
+        {
+            concat.map((item, index) => {
+                <CardContact key={index} link={item.link} />
+            })
+        }
     </div>
+
 
 
 
@@ -39,7 +60,7 @@ export default function Container({ title}) {
                 <h1 className="text-4xl mb-7">{title}</h1>
                 <hr className="my-6" />
                 {
-                    title === "Experience" ? exp : title === "Projects" ? pro : title === "Education/Training" ? edu : title === "Contact" ? cont : <p>{text_p} </p>
+                    title === "Experience" ? comp : title === "Projects" ? pro : title === "Education/Training" ? edu : title === "Contact" ? con : <p>{'Im fronted development in javascript and recently I study rust lang'} </p>
                 }
             </div>
         </section>

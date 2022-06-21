@@ -1,0 +1,72 @@
+{
+    "company": [
+        {
+            "name": "company",
+            "text": "lorem ipsum dolor sit amet",
+            "date": "12 May, 2018",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        },
+        {
+            "name": "company",
+            "text": "lorem ipsum dolor sit amet",
+            "date": "12 May, 2018",
+            "labors": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        }
+    ],
+    "project": [
+        {
+            "title": "project",
+            "img": "lorem ipsum dolor sit amet",
+            "link": "https://github.com/noemk2/"
+        },
+        {
+            "title": "project",
+            "img": "lorem ipsum dolor sit amet",
+            "link": "https://github.com/noemk2/"
+        }
+    ],
+    "education": [
+        {
+            "title": "Universidad",
+            "date": "12 May, 2018",
+            "text": "lorem ipsum dolor sit amet",
+            "list": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        },
+        {
+            "title": "Universidad",
+            "date": "12 May, 2018",
+            "text": "lorem ipsum dolor sit amet",
+            "list": [
+                "notary",
+                "lawyer",
+                "architect"
+            ]
+        }
+    ],
+    "contact": [
+        {
+            "link": "https://github.com/noemk2/"
+        },
+        {
+            "link": "https://github.com/noemk2/"
+        },
+        {
+            "link": "https://github.com/noemk2/"
+        },
+        {
+            "link": "https://github.com/noemk2/"
+        }
+    ]
+}
