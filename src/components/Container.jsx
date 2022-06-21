@@ -13,7 +13,7 @@ import data from "../utils/data.json";
 
 
 export default function Container({ title }) {
-    const text_p = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus illo, provident, dignissimos sint mollitia rem perferendis porro, et possimus ea quo expedita voluptates. Nesciunt qui unde similique ducimus consequatur ea! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ad labore magni, voluptatibus deserunt doloribus doloremque ipsa maxime, assumenda ullam omnis sit nobis officia suscipit veniam pariatur laboriosam totam ea.'
+    const about_me= 'hi Im fronted developer and currently learning rust'
 
 
     let exp = <div className="grid columns-1 gap-10 print:my-14">
@@ -39,7 +39,7 @@ export default function Container({ title }) {
 
     let cont = <div className="md:grid md:grid-cols-4 _lg:grid-cols-4 gap-1 ">
         {
-            data.contact.map((item) => { return <CardContac link={item.link} /> })
+            data.contact.map((item) => { return <CardContac link={item.link} img={item.img} /> })
         }
     </div>
 
@@ -51,7 +51,7 @@ export default function Container({ title }) {
                 <h1 className="text-4xl mb-7">{title}</h1>
                 <hr className="my-6" />
                 {
-                    title === "Experience" ? exp : title === "Projects" ? pro : title === "Education/Training" ? edu : title === "Contact" ? cont : <p>{text_p} </p>
+                    title === "Experience" ? exp : title === "Projects" ? pro : title === "Education/Training" ? edu : title === "Contact" ? cont : <p>{about_me} </p>
                 }
             </div>
         </section>

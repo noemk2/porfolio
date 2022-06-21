@@ -1,17 +1,7 @@
 {
     "company": [
         {
-            "name": "company1",
-            "text": "lorem ipsum dolor sit amet",
-            "date": "12 May, 2018",
-            "labors": [
-                "notary",
-                "lawyer",
-                "architect"
-            ]
-        },
-        {
-            "name": "company2",
+            "name": "nothing...",
             "text": "lorem ipsum dolor sit amet",
             "date": "12 May, 2018",
             "labors": [
@@ -23,58 +13,58 @@
     ],
     "project": [
         {
-            "title": "project1",
-            "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
-            "link": "https://www.youtube.com/"
+            "title": "mandelbrot set",
+            "img": "https://user-images.githubusercontent.com/37389982/174195482-1e969cb4-7322-4aed-840a-493c271ee717.png",
+            "link": "https://github.com/noemk2/rust_mandelbrot"
         },
         {
-            "title": "project2",
-            "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
-            "link": "https://github.com/noemk2/"
+            "title": "NCAD Demoday",
+            "img": "https://user-images.githubusercontent.com/37389982/173133705-c5053f78-c126-418b-bcec-c0a8a4214aaf.png",
+            "link": "https://github.com/noemk2/NCAD-noe"
         },
         {
-            "title": "project",
+            "title": "nearbot",
             "img": "https://avatars.githubusercontent.com/u/37389982?v=4",
-            "link": "https://github.com/noemk2/"
+            "link": "https://github.com/noemk2/nearbot"
         }
     ],
     "education": [
         {
-            "title": "Universidad",
-            "date": "12 May, 2018",
-            "text": "lorem ipsum dolor sit amet",
+            "title": "Near certified developer",
+            "date": "2021",
+            "text": "near dev certificate",
             "labors": [
-                "notary",
-                "lawyer",
-                "architect"
+                "rust",
+                "blockchain",
+                "thegraph"
             ]
         },
         {
-            "title": "Universidad",
-            "date": "12 May, 2018",
-            "text": "lorem ipsum dolor sit amet",
+            "title": "Near certified Aurora developer",
+            "date": "2022",
+            "text": "near aurora dev certificate",
             "labors": [
-                "notary",
-                "lawyer",
-                "architect"
+                "Solidity",
+                "blockchain"
             ]
         }
     ],
     "contact": [
         {
-            "link": "https://github.com/noemk2/rust_mandelbrot"
+            "link": "https://github.com/noemk2",
+            "img": "https://www.svgrepo.com/show/341847/github.svg"
         },
         {
-
-            "link": "https://github.com/noemk2/rust_mandelbrot"
+            "link": "https://github.com/noemk2/",
+            "img": "https://www.svgrepo.com/show/379736/web.svg"
         },
         {
-
-            "link": "https://github.com/noemk2/rust_mandelbrot"
+            "link": "mailto:noemk2@gmail.com",
+            "img": "https://www.svgrepo.com/show/15761/mail.svg"
         },
         {
-
-            "link": "https://github.com/noemk2/rust_mandelbrot"
+            "link": "https://www.linkedin.com/in/noe-huaccharaque/",
+            "img": "https://www.svgrepo.com/show/112615/linkedin.svg"
         }
     ]
 }
